@@ -1,64 +1,26 @@
 <!DOCTYPE html>
 <!--
-
+Manuel Dominguez Montes 
 -->
 <html>
     <head>
-        <title>Validaciones</title>
+        <title>Bienvenido</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/navbar.css">
     </head>
     <body>
-        <h1>Ejemplo</h1>
-        <form action="javascript:muestra();">
-            <p>
-                <label>
-                    Boleta
-                    <input id="boleta" type="number">
-                </label>
-            </p>
-            <p>
-                <label>
-                    Nombre
-                    <input id="nombre" type="text">
-                </label>
-            </p>
-            <p>
-                <label>
-                    Grupo
-                    <input id="grupo" type="text">
-                </label>
-            </p>
-            <p>
-                <label>
-                    Materia 
-                    <input id="materia" type="text">
-                </label>
-            </p>
-            <p>
-                <label>
-                    Fecha
-                    <input id="fecha" type="date">
-                </label>
-            </p>
-            <p>
-                <button>Enviar</button>
-            </p>
-            <p><output id="salidaBoleta"></output></p>
-            <p><output id="salidaNombre"></output></p>
-            <p><output id="salidaGrupo"></output></p>
-            <p><output id="salidaMateria"></output></p>
-            <p><output id="salidaFecha"></output></p>
-        </form>
-        <footer>Dominguez Montes Manuel copyrigh </footer>
-        <script> 
-            function muestra(){
-                salidaBoleta.value = boleta.value;
-                salidaNombre.value = nombre.value;
-                salidaGrupo.value = grupo.value;
-                salidaMateria.value = materia.value;
-                salidaFecha.value = fecha.value;
-        }
-        </script>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="inventario.html">Inventario</a></li>
+            <li><a href="Agregarcosas.html">Agregar Cosas</a></li>
+            <li><a href="consultas.html">Consultas</a></li>
+        </ul>
+        <h1>
+            BIENVENIDO
+        </h1>
+        <p>
+            <output id="SalidadUsuario"></output>
+        </p>
     </body>
 </html>
