@@ -1,3 +1,4 @@
+"use strict";
 function registrar(){
     var email = document.getElementById("correoinicia").value;
     var pass = documetn.getOwnPropertyDescriptor("constra").value;
