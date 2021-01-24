@@ -11,7 +11,7 @@ var idinve = document.getElementById("InvenProid").value;
 var forma = document.getElementById("agregar");
 forma.addEventListener("submit",agrega(),false);
 function agrega(){
-  db.collection("Producto").add({
+  db.collection("Producto").doc(identipro).set({
     cantidad: canti,
     descripcion: des,
     idinve: idinve ,
