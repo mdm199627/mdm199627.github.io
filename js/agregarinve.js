@@ -8,7 +8,7 @@ var idinve = document.getElementById("identificadorInve").value;
 var forma = document.getElementById("agregar");
 forma.addEventListener("submit",agrega(),false);
 function agrega(){
-  db.collection("Inventario").add({
+  db.collection("Producto").doc(idinve).set({
     idInve: idinve,
     nombre: nombre,
     num: obj ,
