@@ -11,7 +11,7 @@ function autentificar(){
     gacerlogin(usuario,password);
     firebase.auth().signInWithEmailAndPassword(usuario, password).then((user) => {
         alert("Autentificacion Correcta");
-        wondow.location.href = "home.html";
+        window.location.href = "home.html";
     })
     .catch((error) => {
       alert("no se a realizado la uatentificacion correctamente");
