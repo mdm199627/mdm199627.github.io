@@ -13,7 +13,7 @@ Dominguez Montes Manuel
 
         <!-- TODO: Add SDKs for Firebase products that you want to use
              https://firebase.google.com/docs/web/setup#available-libraries -->
-
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
         <script>
           // Your web app's Firebase configuration
           var firebaseConfig = {
@@ -26,18 +26,11 @@ Dominguez Montes Manuel
           };
           // Initialize Firebase
           firebase.initializeApp(firebaseConfig);
+          const auth = firebase.auth();
         </script>
         <script src="js/auten.js"></script>
     </head>
     <body>
-        <ul>
-            <li><a href="home.html">HOME</a></li>
-            <li><a href="inventario.html">Inventario</a></li>
-            <li><a href="Agregarcosas.html">Agregar Cosas</a></li>
-            <li><a href="consultas.html">Consultas</a></li>
-            <li><a href="elimina.html">Eliminar</a></li>
-            <li><a href="index.html">Iniciar Secion</a></li>
-        </ul>
         <h1>
             Inicio de Secion
         </h1>
