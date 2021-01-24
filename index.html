@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <!--
-Manuel Dominguez Montes 
+Dominguez Montes Manuel
 -->
 <html>
     <head>
-        <title>Bienvenido</title>
+        <title>Iniciar Secion</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/navbar.css">
-        <script defer src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-<script defer src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
-<script defer src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
-<script defer src="./init-firebase.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+             https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyDtXdSdfy8eVNJSsaFrqhvzSmbWJPz0eBU",
+            authDomain: "mdm199627fbweb.firebaseapp.com",
+            projectId: "mdm199627fbweb",
+            storageBucket: "mdm199627fbweb.appspot.com",
+            messagingSenderId: "873162475850",
+            appId: "1:873162475850:web:1ab45394eb818e985999b3"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+        </script>
+        <script src="js/auten.js"></script>
     </head>
     <body>
         <ul>
-            <li><a href="#">HOME</a></li>
+            <li><a href="home.html">HOME</a></li>
             <li><a href="inventario.html">Inventario</a></li>
             <li><a href="Agregarcosas.html">Agregar Cosas</a></li>
             <li><a href="consultas.html">Consultas</a></li>
+            <li><a href="elimina.html">Eliminar</a></li>
+            <li><a href="index.html">Iniciar Secion</a></li>
         </ul>
         <h1>
-            BIENVENIDO
+            Inicio de Secion
         </h1>
-        <p>
-            <output id="SalidadUsuario"></output>
+        <form id="autentificacion">
+            <p>
+            <label>
+                Correo 
+                <input id="corrreoinicia" type="email" name="correo">
+            </label>
         </p>
+        <p>
+            <label>
+                Contraseña 
+                <input id="constra" type="password" name="contra">
+            </label>
+        </p>
+        </form>
+        <script src="/__/firebase/init.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-app.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-auth.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-firestore.js"></script>
     </body>
 </html>
