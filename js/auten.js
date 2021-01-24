@@ -6,8 +6,8 @@ function inicializar(){
 
 }
 function autentificar(){
-    var usuario = even.target.correo.value;
-    var password = even.target.contra.value;
+    var usuario = even.target.correoinicia.value;
+    var password = even.target.constra.value;
     gacerlogin(usuario,password);
     firebase.auth().signInWithEmailAndPassword(usuario, password).then((user) => {
         alert("Autentificacion Correcta");
