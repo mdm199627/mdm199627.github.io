@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+Manuel Dominguez Montes 
+-->
+<html>
+    <head>
+        <title>INVENTARIO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/navbar.css">
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="inventario.html">Inventario</a></li>
+            <li><a href="Agregarcosas.html">Agregar Cosas</a></li>
+            <li><a href="consultas.html">Consultas</a></li>
+            <li><a href="elimina.html">Eliminar</a></li>
+        </ul>
+        <div>
+            <p>
+                <label>
+                Nombre del Producto
+                </label>
+                <input id="nombreProducto" type="text" >
+            </p>
+            <p>
+            <label>
+               Decricpion 
+                <input id="descri" type="number" >
+            </label>
+            </p>
+            <p>
+            <label>
+                Cantidad a guardar
+                <input id="cantidad" type="number" >
+            </label>
+            </p>
+            <p>
+            <label>
+                Medicion(Kg,gm,Lt,ml,peso,etc)
+                <input id="medicion" type="text" >
+            </label>
+            </p>
+            <p>
+            <label>
+                Numero de Identificación
+                <input id="identiPro" type="text" >
+            </label>
+            </p>
+            <p>
+            <label>
+                Tipo de uso(consumo,venta,etc)
+                <input id="consumotipo" type="text" >
+            </label>
+            </p>
+             <p>
+            <label>
+                Id del Inventario
+                <input id="InvenProId" type="text" >
+            </label>
+            </p>
+        </div>
+        <p>
+            <button id="guardarPro" type="submit">Guardar</button>
+            <button id="limpiarPro" type="submit">Limpiar</button>
+            <button id="cancelarPro" type="submit">Cancelar</button>
+        </p>
+        <script src="/__/firebase/init.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-app.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-auth.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-firestore.js"></script>
+    </body>
+</html>
