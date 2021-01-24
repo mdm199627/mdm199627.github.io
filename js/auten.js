@@ -1,20 +1,14 @@
-window.onload = inicializar;
-var formauten;
-function inicializar(){
-    formauten = document.getElementById("autentificacion");
-    formauten = addEventListener("submit",autentificar,false);
-
-}
-function autentificar(){
-    var usuario = even.target.correoinicia.value;
-    var password = even.target.constra.value;
-    gacerlogin(usuario,password);
-    firebase.auth().signInWithEmailAndPassword(usuario, password).then((user) => {
-        alert("Autentificacion Correcta");
-        window.location.href = "home.html";
-    })
-    .catch((error) => {
-      alert("no se a realizado la uatentificacion correctamente");
-    });
-
+function registrar(){
+    var email = document.getElementById("correoinicia").value;
+    var pass = documetn.getOwnPropertyDescriptor("constra").value;
+    firebase.auth().createUserWithEmailAndPassword(email, pass)
+  .then((user) => {
+    window.location.href="home.html";
+  })
+  .catch((error) => {
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ..
+  });
+    
 }
