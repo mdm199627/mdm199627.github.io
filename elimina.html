@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+Dominguez Montes Manuel
+-->
+<html>
+    <head>
+        <title>Eliminar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/navbar.css">
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="inventario.html">Inventario</a></li>
+            <li><a href="Agregarcosas.html">Agregar Cosas</a></li>
+            <li><a href="consultas.html">Consultas</a></li>
+            <li><a href="elimina.html">Eliminar</a></li>
+        </ul>
+        <h1>
+            ¿Qué desea Eliminar?
+        </h1>
+        <h2>
+            Productos
+        </h2>
+        <p>
+            <label>
+                Id del producto 
+                <input id="consultaPro" type="text">
+            </label>
+            <button id="accionEliminaP" type="submit">Eliminar</button>
+        </p>
+         <h2>
+            Inventarios
+        </h2>
+        <p>
+            <label>
+                Id del Inventario 
+                <input id="consultaInven" type="text">
+            </label>
+            <button id="accionEliminaI" type="submit">Eliminar</button>
+        </p>
+        <div>
+            <output id="salidaMensaje"></output>
+        </div>
+        <script src="/__/firebase/init.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-app.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-auth.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-firestore.js"></script>
+    </body>
+</html>
