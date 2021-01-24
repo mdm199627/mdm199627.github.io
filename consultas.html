@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+Dominguez Montes Manuel
+-->
+<html>
+    <head>
+        <title>Consultas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/navbar.css">
+    </head>
+    <body>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="inventario.html">Inventario</a></li>
+            <li><a href="Agregarcosas.html">Agregar Cosas</a></li>
+            <li><a href="consultas.html">Consultas</a></li>
+            <li><a href="elimina.html">Eliminar</a></li>
+        </ul>
+        <h1>
+            ¿Qué desea Consultar?
+        </h1>
+        <h2>
+            Productos
+        </h2>
+        <p>
+            <label>
+                Id del producto 
+                <input id="consultaPro" type="text">
+            </label>
+            <button id="AccionConsulta" type="submit">Cunsultar</button>
+        </p>
+        <div>
+            <output id="salidaDes"></output>
+            <p><output id="salidaCanti"></output></p>
+            <p><output id="salidaMedida"></output></p>
+            <p><output id="salidaTipo"></output></p>
+            <p><output id="salidaInvetarioId"></output></p>
+        </div>
+         <h2>
+            Inventarios
+        </h2>
+        <p>
+            <label>
+                Id del Inventario 
+                <input id="consultaInven" type="text">
+            </label>
+            <button id="AccionConsultaInve" type="submit">Cunsultar</button>
+        </p>
+        <div>
+            <output id="salidaCapa"></output>
+            <p><output id="salidaTipoAlma"></output></p>
+            <p><output id="salidaNombreInve"></output></p>
+        </div>
+        <script src="/__/firebase/init.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-app.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-auth.js"></script>
+        <script src="/__/firebase/7.23.0/firebase-firestore.js"></script>
+    </body>
+</html>
